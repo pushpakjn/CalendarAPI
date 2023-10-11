@@ -71,7 +71,7 @@ const Home = () => {
 
   const handleClick = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/auth/login");
+      const res = await axios.post("https://beautiful-uniform-bear.cyclic.app/auth/login");
       setEvents(res.data);
       navigate("/event", { state: res.data });
     } catch (error) {
